@@ -9,7 +9,6 @@
         ValueError: If the user enters a non-numeric value for the temperature.
 """
 
-
 class TypeError(Exception):
    
    """ If the user enters an invalid unit (not 'C' or 'F') """
@@ -24,7 +23,7 @@ def celsius_to_fahrenheit(celsius):
 
 def main():
   
-    print("updated3")
+    
     temperature_and_unit = input("Enter a temperature and its unit (e.g., \"25 C\" or \"77 F\"): ")
 
     input_splited=temperature_and_unit.split(" ")
