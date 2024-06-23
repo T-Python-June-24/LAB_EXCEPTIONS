@@ -15,18 +15,19 @@
 # ```
 
 
+
+
+def additoin(x, y):
+    x = 10
+    y = 20
+    print("Addition:", x + b) 
+
 try:
-
-    def additoin(x, y):
-        x = 10
-        y = 20
-        print("Addition:", x + b) 
-
-
     additoin(10, 20)
 
-except NameError:
-    print("variable not defined")
+except NameError as ne:
+    #print("variable not defined")
+    print(ne)
 
 
 except Exception as e:

@@ -59,12 +59,21 @@ def main():
     while True:
         try:
             print()
-            temp = input("Enter your temperature with its unit (e.g. 33 C or 76 F): ")
+            temp = input("Enter your temperature with its unit (e.g. 33 C or 76 F): ") #.split(" ")
+            # num, unit = input("Enter your temperature with its unit (e.g. 33 C or 76 F): ").split(" ", maxsplit= 1)
+
+            # if temp.lower() == "exit":
+            #     print("bye")
+            #     break
+
+
             num, unit = temp.split()
             num = float(num)
 
             # num, space, unit = temp.partition(' ')
             # num = int(num)
+
+            ### try
 
 
             if unit.upper() == "C":
@@ -75,7 +84,6 @@ def main():
                 print(f"{num} F is {celsius} C")
 
             else:
-                # print("Something went wrong..")
                 raise TypeError("Invalid unit. Please use 'C' for Celsius or 'F' for Fahrenheit.")
 
                 
