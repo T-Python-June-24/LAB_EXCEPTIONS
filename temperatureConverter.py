@@ -22,7 +22,7 @@ def main():
         fahrenheit = round(fahrenheit ,2)
         print(f"Temperature in fahrenheit: {fahrenheit} F")
     else:
-        raise Exception("Invalid unit. Please use 'C' for Celsius or 'F' for Fahrenheit")
+        raise TypeError("Invalid unit. Please use 'C' for Celsius or 'F' for Fahrenheit")
 
 
 #main program
@@ -31,5 +31,7 @@ while True:
         main()
     except ValueError:
         print("Invalid input. Please enter temperature in correct form (e.g. 25 C or 77 F)")
+    except TypeError as te:
+        print(te)
     except Exception as e:
         print(e)
