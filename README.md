@@ -7,13 +7,13 @@
 - If operation successful , print "the operation is successful"
 - if operation fails, handle the specific exception that is raised , and print a relevant message.
 ```
-def additoin(x, y):
+def addition(x, y):
     x = 10
     y = 20
     print("Addition:", x + b)
 
 
-additoin(10, 20)
+addition(10, 20)
 ```
 
 
