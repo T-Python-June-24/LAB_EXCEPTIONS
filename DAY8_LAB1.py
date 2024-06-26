@@ -24,7 +24,7 @@ def additoin(x, y):
 
 try:
     additoin(10, 20)
-
+    print("The operation is successful")
 except NameError as ne:
     #print("variable not defined")
     print(ne)
